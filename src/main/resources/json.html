@@ -15,10 +15,12 @@
         $.ajax({
             async:false,
             type:"get",
-            url:"http://localhost:8080/1",
+            url:"http://localhost:8080/findOne",
             contentType: "application/x-www-form-urlencoded",
             dataType: "json",
-            data: {},
+            data: {
+                first: "010001",
+            },
             success:function(result){
             },
             error: function (errorMsg) {
@@ -29,10 +31,13 @@
         $.ajax({
             async:false,
             type:"get",
-            url:"http://localhost:8080/2",
+            url:"http://localhost:8080/findTwo",
             contentType: "application/x-www-form-urlencoded",
             dataType: "json",
-            data: {},
+            data: {
+                first: "010001",
+                second:"010002"
+            },
             success:function(result){
             },
             error: function (errorMsg) {
